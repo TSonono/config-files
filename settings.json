@@ -1,0 +1,75 @@
+{
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.suggestSelection": "first",
+    "terminal.integrated.fontSize": 14,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "[c,cpp]": {
+        "editor.rulers": [
+            80
+        ],
+    },
+    "[python]": {
+        "editor.rulers": [
+            80
+        ]
+    },
+    "[markdown]" : {
+        "editor.rulers": [
+            80
+        ],
+        "rewrap.autoWrap.enabled": true,
+        "files.trimTrailingWhitespace": false
+    },
+    "terminal.external.osxExec": "iTerm.app",
+    "[cpp]": {
+        "editor.rulers": [
+            80
+        ],
+        "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+    },
+    "workbench.startupEditor": "newUntitledFile",
+    "terminal.integrated.fontFamily": "'MesloLGS NF'",
+    "c-cpp-flylint.flawfinder.enable": false,
+    "c-cpp-flylint.lizard.enable": false,
+    "c-cpp-flylint.clang.enable": false,
+    "c-cpp-flylint.flexelint.enable": false,
+    "c-cpp-flylint.standard": [
+        "c99",
+        "c++11"
+    ],
+    "gitlens.currentLine.enabled": false,
+    "markdown.extension.preview.autoShowPreviewToSide": true,
+    "sync.gist": "cb7ac61634a958872eda0d3b26b45db0",
+    "editor.minimap.enabled": true,
+    "files.trimTrailingWhitespace": true,
+    "files.associations": {
+        "*.overlay": "dts",
+        "*.h": "c",
+    },
+    "task.problemMatchers.neverPrompt": {
+        "shell": true
+    },
+    "diffEditor.ignoreTrimWhitespace": false,
+    "extensions.ignoreRecommendations": true,
+    "doxdocgen.generic.returnTemplate": "@return  ",
+    "doxdocgen.generic.paramTemplate": "@param {param}  ",
+    "C_Cpp.intelliSenseEngine": "Disabled",
+    "editor.fontSize": 15,
+    "cmake.configureOnOpen": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "git.ignoreLegacyWarning": true,
+    "security.workspace.trust.enabled": false,
+    "editor.occurrencesHighlight": false,
+    "editor.largeFileOptimizations": false,
+    "python.languageServer": "Jedi",
+    "python.linting.enabled": true,
+    "python.linting.flake8Enabled": true,
+    "python.formatting.provider": "autopep8",
+    "editor.guides.bracketPairs": true,
+    "go.toolsManagement.autoUpdate": true,
+    "telemetry.telemetryLevel": "off",
+    "cortex-debug.enableTelemetry": false,
+    "workbench.colorTheme": "GitHub Dark Default",
+    "window.zoomLevel": 1,
+}
