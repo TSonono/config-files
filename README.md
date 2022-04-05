@@ -6,3 +6,4 @@
 - alacritty.yml - Config file for Alacritty terminal emulator
   - draculy.yml - Dracula theme for Alacritty
 - settings.json - Global VSCodium config file
+- logid.cfg - Logitech MX Master 3 logid config file
