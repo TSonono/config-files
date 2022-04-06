@@ -1,0 +1,184 @@
+{
+	"zephyr_ncs": {
+        "prefix": [
+		  "ncs"
+        ],
+        "body": [
+			"{",
+			"    \"cmake.generator\": \"Ninja\",",
+			"    \"cmake.configureOnOpen\": true,",
+			"    \"cmake.parallelJobs\": 0,",
+			"    \"cmake.configureArgs\": [",
+			"        \"-DBOARD=nrf5340dk_nrf5340_cpuapp\",",
+			"        // \"-DBOARD=nrf52840dk_nrf52840\",",
+			"        \"-DZEPHYR_BASE=/home/tofik/ncs/zephyr\"",
+			"    ],",
+			"    \"cmake.environment\": {\"ZEPHYR_BASE\" : \"/home/tofik/ncs/zephyr\"},",
+			"    \"kconfig.zephyr.base\": \"/home/tofik/ncs/zephyr\",",
+			"    // \"c-cpp-flylint.cppcheck.enable\": true,",
+			"    // \"c-cpp-flylint.cppcheck.addons\": [",
+			"    //    \"/Users/tsonono/embedded/misra.json\"",
+			"    // ]",
+			"    \"clangd.onConfigChanged\": \"restart\",",
+			"    \"clangd.arguments\": [",
+			"            // \"--clang-tidy\",",
+			"            \"--compile-commands-dir=${WORKSPACE_FOLDER}/build\",",
+			"            \"-query-driver=/home/tofik/toolchains/gcc-arm/gcc-arm-none-eabi-10-2020-q4-major/bin/arm-none-eabi*\",",
+			"            // \"-query-driver=/home/tofik/zephyr-sdk-0.12.3/arm-zephyr-eabi/bin/arm-zephyr-eabi*\",",
+
+			"     ],",
+			"     \"C_Cpp.intelliSenseEngine\": \"Disabled\",",
+			"}",
+			""
+        ],
+        "description": "settings.json for nRF Connect SDK"
+	},
+	"zephyr_vanilla": {
+        "prefix": [
+		  "zephyr"
+        ],
+        "body": [
+			"{",
+			"    \"cmake.generator\": \"Ninja\",",
+			"    \"cmake.configureOnOpen\": true,",
+			"    \"cmake.parallelJobs\": 0,",
+			"    \"cmake.configureArgs\": [",
+			"        \"-DBOARD=nrf5340dk_nrf5340_cpuapp\",",
+			"        // \"-DBOARD=nrf52840dk_nrf52840\",",
+			"        \"-DZEPHYR_BASE=/home/tofik/zephyrproject/zephyr\"",
+			"    ],",
+			"    \"cmake.environment\": {\"ZEPHYR_BASE\" : \"/tofik/tofik/zephyrproject/zephyr\"},",
+			"    \"kconfig.zephyr.base\": \"/home/tofik/zephyrproject/zephyr\",",
+			"    // \"c-cpp-flylint.cppcheck.enable\": true,",
+			"    // \"c-cpp-flylint.cppcheck.addons\": [",
+			"    //    \"/Users/tsonono/embedded/misra.json\"",
+			"    // ]",
+			"    \"clangd.onConfigChanged\": \"restart\",",
+			"    \"clangd.arguments\": [",
+			"            // \"--clang-tidy\",",
+			"            \"--compile-commands-dir=${WORKSPACE_FOLDER}/build\",",
+			"            \"-query-driver=/home/tofik/toolchains/gcc-arm/gcc-arm-none-eabi-10-2020-q4-major/bin/arm-none-eabi*\",",
+			"            // \"-query-driver=/home/tofik/zephyr-sdk-0.12.3/arm-zephyr-eabi/bin/arm-zephyr-eabi*\",",
+			"     ],",
+			"     \"C_Cpp.intelliSenseEngine\": \"Disabled\",",
+			"}",
+			""
+        ],
+        "description": "settings.json for vanilla Zephyr"
+	},
+	"C/C++ cmake": {
+        "prefix": [
+		  "c/cpp-cmake"
+        ],
+        "body": [
+			"{",
+			"    \"cmake.generator\": \"Ninja\",",
+			"    \"cmake.configureOnOpen\": true,",
+			"    \"cmake.parallelJobs\": 0,",
+			"    \"cmake.configureArgs\": [",
+			"        \"-DSANITIZE_ADDRESS=Off\",",
+			"        \"-DBUILD_TESTS=Off\",",
+			"        \"-DWITH_COVERAGE=Off\",",
+			"    ],",
+			"    \"clangd.onConfigChanged\": \"restart\",",
+			"    \"clangd.arguments\": [",
+			"            \"--clang-tidy\",",
+			"            \"--compile-commands-dir=${WORKSPACE_FOLDER}/build\",",
+			"     ],",
+			"     \"C_Cpp.intelliSenseEngine\": \"Disabled\",",
+			"}",
+			""
+        ],
+        "description": "settings.json for cmake C/C++ with my custom template"
+	},
+	"C/C++ generic": {
+        "prefix": [
+		  "c/cpp"
+        ],
+        "body": [
+			"{",
+			"    \"clangd.onConfigChanged\": \"restart\",",
+			"    \"clangd.arguments\": [",
+			"            \"--clang-tidy\",",
+			"            \"--compile-commands-dir=${WORKSPACE_FOLDER}\",",
+			"     ],",
+			"     \"C_Cpp.intelliSenseEngine\": \"Disabled\",",
+			"}",
+			""
+        ],
+        "description": "settings.json for generic C/C++"
+	},
+	"Docker cpp": {
+        "prefix": [
+		  "docker"
+        ],
+        "body": [
+			"{",
+			"    \"workspaceFolder\": \"/home/tofik/repos/monorepo/src/sw-liveingest\",",
+			"    \"extensions\": [",
+			"        \"cschlosser.doxdocgen\",",
+			"        \"hangxingliu.vscode-systemd-support\",",
+			"        \"llvm-vs-code-extensions.vscode-clangd\",",
+			"        \"ms-python.python\",",
+			"        \"ms-python.vscode-pylance\",",
+			"        \"ms-toolsai.jupyter\",",
+			"        \"ms-vscode.cmake-tools\",",
+			"        \"ms-vscode.cpptools\",",
+			"        \"njpwerner.autodocstring\",",
+			"        \"twxs.cmake\",",
+			"        \"yzhang.markdown-all-in-one\"",
+			"    ],",
+			"    \"settings\": {",
+			"        \"clangd.path\": \"/home/tofik/repos/monorepo/llvm-project/build/bin/clangd\"",
+			"    }",
+			"}"
+        ],
+        "description": "settings.json for docker C/C++ env"
+	},
+	"nRF5SDK": {
+        "prefix": [
+		  "nrf"
+        ],
+        "body": [
+			"{",
+			"    \"configurations\": [",
+			"        {",
+			"            \"name\": \"ARM GCC\",",
+			"            \"includePath\": [",
+			"                \"\\${workspaceRoot}/**\",",
+			"                \"\\${workspaceRoot}/../external/nrf-toolchain/components/**\",",
+			"                \"\\${workspaceRoot}/../external/nrf-toolchain/modules/**\",",
+			"                \"\\${workspaceRoot}/../external/nrf-toolchain/external/**\",",
+			"                \"\\${workspaceRoot}/../external/nrf-toolchain/integration/**\"",
+			"            ],",
+			"            \"defines\": [",
+			"                \"BOARD_PCA10056\",",
+			"                \"CONFIG_GPIO_AS_PINRESET\",",
+			"                \"INITIALIZE_USER_SECTIONS\",",
+			"                \"FLOAT_ABI_HARD\",",
+			"                \"NRF52\",",
+			"                \"NRF52840_XXAA\",",
+			"                \"__STATIC_INLINE\"",
+			"            ],",
+			"            \"macFrameworkPath\": [",
+			"                \"/System/Library/Frameworks\",",
+			"                \"/Library/Frameworks\"",
+			"            ],",
+			"            \"compilerPath\": \"\\${workspaceRoot}/../external/nrf-toolchain/gcc-arm/Linux/bin/arm-none-eabi-gcc\",",
+			"            \"compilerArgs\": [",
+			"                \"-mcpu=cortex-m4\",",
+			"                \"-mthumb\",",
+			"                \"-mfloat-abi=hard\"",
+			"            ],",
+			"            \"cStandard\": \"c99\",",
+			"            \"cppStandard\": \"c++11\",",
+			"            \"intelliSenseMode\": \"gcc-arm\"",
+			"        }",
+			"    ],",
+			"    \"version\": 4",
+			"}",
+			""
+        ],
+        "description": "nRF5SDK gcc-arm VSCode config"
+	},
+}
